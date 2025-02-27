@@ -1,4 +1,6 @@
 # Gamecock Club Swimming Website
+![Logo](/images/team-logo.jpg)
+
 
 This repository contains the source code for the University of South Carolina's Gamecock Club Swimming team website. The site provides information about the team, schedules, FAQs, and resources for current and prospective members.
 
