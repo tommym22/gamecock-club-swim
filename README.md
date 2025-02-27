@@ -1,6 +1,6 @@
 # Gamecock Club Swimming Website
-![Logo](/images/team-logo.jpg)
 
+![Logo](/images/team-logo.jpg)
 
 This repository contains the source code for the University of South Carolina's Gamecock Club Swimming team website. The site provides information about the team, schedules, FAQs, and resources for current and prospective members.
 
@@ -20,18 +20,21 @@ The website serves as a one-stop-shop for everything related to Gamecock Club Sw
 The following resources were used in the development of this website:
 
 ### Navigation Components
+
 - Submenu dropdown navigation: Adapted from W3Schools tutorial on subnav menus
-  - Source: https://www.w3schools.com/howto/howto_css_subnav.asp
+  - Source: <https://www.w3schools.com/howto/howto_css_subnav.asp>
 
 ### Visual Components
+
 - Image gallery scrolling functionality: Adapted from W3Schools image gallery scroll tutorial
-  - Source: https://www.w3schools.com/howto/howto_css_image_gallery_scroll.asp
+  - Source: <https://www.w3schools.com/howto/howto_css_image_gallery_scroll.asp>
 
 ### External Integrations
+
 - Instagram embed: Using official Instagram embedding API
-  - Documentation: https://developers.facebook.com/docs/instagram/embedding/
+  - Documentation: <https://developers.facebook.com/docs/instagram/embedding/>
 - Google Calendar embed: Using Google Calendar iframe embedding
-  - Documentation: https://support.google.com/calendar/answer/41207
+  - Documentation: <https://support.google.com/calendar/answer/41207>
 
 ## Future Development Plans
 
@@ -43,10 +46,10 @@ The following features are planned for future implementation:
 
 ## Contributing
 
-If you're a member of the Gamecock Club Swimming team and would like to help maintain the website, please contact Tommy at tmitch@sc.edu for access to the repository.
+If you're a member of the Gamecock Club Swimming team and would like to help maintain the website, please contact Tommy at <tmitch@sc.edu> for access to the repository.
 
 ## License
 
 This project is maintained by the University of South Carolina Gamecock Club Swimming team. All rights reserved.
 
-#### This README was generated using [readme.so](https://readme.so/editor)
+### This README was generated using [readme.so](https://readme.so/editor)
