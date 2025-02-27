@@ -50,6 +50,6 @@ If you're a member of the Gamecock Club Swimming team and would like to help mai
 
 ## License
 
-This project is maintained by the University of South Carolina Gamecock Club Swimming team. All rights reserved.
+This project is maintained by the Gamecock Club Swim team and is not affiliated with the University of South Carolina.
 
 ### This README was generated using [readme.so](https://readme.so/editor)
