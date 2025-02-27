@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Gamecock Club Swim: Home</title>
+    </head>
+    <body>
+        <!--Contains the nav menu-->
+        <header>
+            <nav>
+                <!--TODO: Definitely need to change the image sizes-->
+                <img src="images/team-logo.jpg" alt="Circle with the South Carolina Gamecock logo surrounded by text that reads 'Gamecock Club Swimming'">
+                <ul class="navbar">
+                    <!--TODO: Remove index.html in final product-->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About The Team</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="contact.html">Contact Us!</a></li>
+                    <!--TODO: Figure out how to make this work, I want to be able to expand the more links , but I don't want it to take me to a different site-->
+                    <li class="has-submenu">
+                        <a href="#">More Links</a>
+                        <ul class="submenu">
+                            <li><a href="https://drive.google.com/drive/folders/1xQOK-YKnYAgTUZdeBpT_wYjNcYZJDCp_?usp=sharing">Practice Logs</a></li>
+                            <li><a href="https://drive.google.com/drive/folders/1thAzTgNY29F9XdZfnlzp68hA_TFqOYns">Records and National Cuts</a></li>
+                            <li>Registration
+                                <ul class="submenu-two">
+                                    <li><a href="https://garnetgate.sa.sc.edu/organization/clubswimming">Garnet Gate</a></li>
+                                    <li><a href="https://sc.dserec.com/online/clubsports">DSE Registration</a></li>
+                                    <li><a href="https://www.collegeclubswimming.com/page.cfm?pagetitle=Individual+Registration">CCS Registration</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="https://www.facebook.com/groups/807592326601438/">Alumni Network</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <h1>THIS IS A BANNER</h1>
+        </header>
+        <!--Main section-->
+        <main>
+            <h2>Contact Us</h2>
+            <form>
+                <label for="member-status">New or returning member?</label>
+                <select id="member-status" name="member-status">
+                    <option value="new-member">New</option>
+                    <option value="returning-member">Returning</option>
+                </select>
+                <br>
+                <label>Name:</label>
+                <input>
+                <br>
+                <label>Email:</label>
+                <input>
+                <br>
+                <label>Phone:</label>
+                <input>
+                <br>
+                <label>Message:</label>
+                <input>
+                <br>
+                <button>Submit</button>
+            </form>
+        </main>
+        
+        <!--Footer of the page, contains heading, team logo, and a smaller version of the nav bar-->
+        <footer>
+            <nav>
+                <h3>Gamecock Club Swim</h3>
+                <img src="images/team-logo.jpg" alt="ICircle with the South Carolina Gamecock logo surrounded by text that reads 'Gamecock Club Swimming'">
+                <ul class="footer-navbar">
+                        <li><a href="about.html">About The Team</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                        <li><a href="contact.html">Contact Us!</a></li>
+                        <li><a href="https://drive.google.com/file/d/1ZMWpub2MPij5LmCH1Y02P-vvaJ_UTEcc/view?rtpof=true&sd=true">Team Constitution</a></li>
+                    </ul>
+            </nav>
+            <p>This project is maintained by the Gamecock Club Swim team and is not affiliated with the University of South Carolina.</p>
+        </footer>
+    </body>
+</html>
