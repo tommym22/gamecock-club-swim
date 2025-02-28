@@ -41,7 +41,7 @@ The following resources were used in the development of this website:
 
 ## Future Development Plans
 
-The following features are planned for future implementation:
+Coming Soon:
 
 - Blog system using Jekyll
 - Improved dropdown menu functionality for the "More Links" section
@@ -54,5 +54,3 @@ If you're a member of the Gamecock Club Swimming team and would like to help mai
 ## License
 
 This project is maintained by the Gamecock Club Swim team and is not affiliated with the University of South Carolina.
-
-### This README was generated using [readme.so](https://readme.so/editor)
