@@ -21,7 +21,7 @@
         <!--Contains the nav menu-->
         <header>
             <nav>
-                <!--TODO: Definitely need to change the image sizes-->
+                <!--TODO: Change image sizes using CSS and not HTML-->
                 <img src="images/team-logo.jpg" alt="Circle with the South Carolina Gamecock logo surrounded by text that reads 'Gamecock Club Swimming'">
                 <ul class="navbar">
                     <!--TODO: Remove index.html in final product-->
@@ -31,7 +31,7 @@
                     <li><a href="contact.html">Contact Us</a></li>
                     <!--TODO: Figure out how to make this work, I want to be able to expand the more links , but I don't want it to take me to a different site-->
                     <li class="more-links">
-                        <a href="index.html">More Links</a>
+                        <a href="oh-no.html">More Links</a>
                         <ul class="more-links-sub">
                             <li><a href="https://drive.google.com/drive/folders/1xQOK-YKnYAgTUZdeBpT_wYjNcYZJDCp_?usp=sharing">Practice Logs</a></li>
                             <li><a href="https://drive.google.com/drive/folders/1thAzTgNY29F9XdZfnlzp68hA_TFqOYns">Records and National Cuts</a></li>
@@ -52,24 +52,25 @@
         <!--Main section-->
         <main>
             <h2>Contact Us</h2>
-            <form>
+            <!--TODO: Want to send email from this form, not sure how though-->
+            <form action="email" method="POST">
                 <label for="member-status">New or returning member?</label>
                 <select id="member-status" name="member-status">
                     <option value="new-member">New</option>
                     <option value="returning-member">Returning</option>
                 </select>
                 <br>
-                <label>Name:</label>
-                <input>
+                <label for="name"> Name:</label>
+                <input type="text" id="name" required>
                 <br>
-                <label>Email:</label>
-                <input>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="name@domain.com" required>
                 <br>
-                <label>Phone:</label>
-                <input>
+                <label for="phone-number">Phone Number:</label>
+                <input type="tel" id="phone-number" placeholder="(###)###-####">
                 <br>
-                <label>Message:</label>
-                <input>
+                <label for="message">Message:</label>
+                <input type="text" id="message" required>
                 <br>
                 <button>Submit</button>
             </form>
