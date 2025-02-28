@@ -23,11 +23,14 @@ The following resources were used in the development of this website:
 
 - Submenu dropdown navigation: Adapted from W3Schools tutorial on subnav menus
   - Source: <https://www.w3schools.com/howto/howto_css_subnav.asp>
+- Custom 404 Error message
+  - Source: <https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site>
 
 ### Visual Components
 
 - Image gallery scrolling functionality: Adapted from W3Schools image gallery scroll tutorial
   - Source: <https://www.w3schools.com/howto/howto_css_image_gallery_scroll.asp>
+  - Source: <https://jekyllrb.com/docs/step-by-step/01-setup/>
 
 ### External Integrations
 
