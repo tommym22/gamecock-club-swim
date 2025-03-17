@@ -1,0 +1,89 @@
+/* Global Backgrounds, Colors, and Widths */
+* {box-sizing: border-box;}
+/* This code helps create the dropdowns on each page */
+.more-links-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+.more-links-sub-dropdown{
+    display: none; /*hides the links by default */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /*creates a shadow to make the dropdown stand out */
+    padding: 12px 16px;
+    z-index: 1;
+}
+.more-links-dropdown:hover .more-links-sub-dropdown {
+    display: block;
+}
+.registration-dropdown {
+    position: relative;
+    display: inline-block;
+}
+.registration-sub-dropdown{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+.registration-dropdown:hover .registration-sub-dropdown {
+    display: block;
+}
+body{
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+header, nav ul, #content-wrapper{
+    width: 90%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    position: relative;
+}
+
+header h1, nav ul{
+    padding-left: 50px;
+}
+
+/*  Navbar */
+nav{
+    background-color: white;
+}
+nav ul{list-style-type: none;}
+nav ul li{display:inline-block}
+nav a {
+    display:inline-block;
+    /* padding:1rem; */
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+/*Figure out how to make the item bigger instead of creating this
+ugly block
+*/
+nav a:hover{
+    color: #6ac8c0;
+}
+/*homepage bottom colunmns*/
+main section div img{
+    border: 3px double #333;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+aside a{
+    display: inline-block;
+    padding: 0.5rem;
+}
+/*homepage columns*/
+#content-wrapper{
+    display: flex;
+}
