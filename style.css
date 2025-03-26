@@ -205,10 +205,32 @@ footer nav p{
 }
 .uh-oh p{
     display: block; 
-    padding-left: auto; 
     margin-right: auto;
     text-align: center;
 }
 .uh-oh h1{
     border: none;
 }
+#slides {
+    height: 500px;
+    position: relative; 
+    overflow: hidden; 
+}
+/* Animation */
+#slides > * {
+    position: absolute; 
+    animation: 12s slideshow infinite ease-in-out
+}
+@keyframes slideshow {
+    0% {left: 100%}
+    4% {left: 0%}
+    33.33% {left: 0%}
+    37.33% {left: -100%}
+    100% {left: -100%}
+}
+
+#slides:nth-child(1) {animation-delay: 0s}
+#slides:nth-child(2) {animation-delay: 3s}
+#slides:nth-child(3) {animation-delay: 6s}
+#slides:nth-child(4) {animation-delay: 9s}
+#slides:nth-child(5) {animation-delay: 12s}
