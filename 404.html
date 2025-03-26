@@ -13,14 +13,79 @@
 </head>
 
 <body>
-  <img src="images/team-logo.jpg" class="logo"
-    alt="Circle with the South Carolina Gamecock logo surrounded by text that reads 'Gamecock Club Swimming'">
-  <h1>That's a DQ</h1>
-  <p>
-    The page you are looking for can't be found. Click to return to the home
-    page.
-  </p>
-  <button>Return Home</button>
+  <header>
+    <nav>
+      <!--TODO: change the image sizes w/CSS-->
+      <a href="index.html">
+        <img src="images/team-logo.jpg" class="logo"
+          alt="Circle with the South Carolina Gamecock logo surrounded by text that reads 'Gamecock Club Swimming'">
+      </a>
+      <ul class="navbar">
+        <!--TODO: Remove index.html in final product-->
+        <li><a href="about25.html">About The Team</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <!--More links currently takes you to 404 page :( -->
+        <li class="more-links-dropdown">
+          <a href="#">More Links <span class="dropdown-arrow">▼</span></a>
+          <ul class="more-links-sub-dropdown">
+            <li>
+              <a href="https://drive.google.com/drive/folders/1xQOK-YKnYAgTUZdeBpT_wYjNcYZJDCp_?usp=sharing">Practice
+                Logs</a>
+            </li>
+            <li>
+              <a href="https://drive.google.com/drive/folders/1thAzTgNY29F9XdZfnlzp68hA_TFqOYns">Records and National
+                Cuts</a>
+            </li>
+            <li class="registration-dropdown">
+              <a href="#">Registration</a>
+              <ul class="registration-sub-dropdown">
+                <li>
+                  <a href="https://garnetgate.sa.sc.edu/organization/clubswimming">Garnet Gate</a>
+                </li>
+                <li>
+                  <a href="https://sc.dserec.com/online/clubsports">DSE Registration</a>
+                </li>
+                <li>
+                  <a href="https://www.collegeclubswimming.com/page.cfm?pagetitle=Individual+Registration">CCS
+                    Registration</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/groups/807592326601438/">Alumni Network</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <h1>Election Results Are Now Available!</h1>
+  </header>
+  <main>
+    <div class="uh-oh">
+      <h2>That's a DQ</h2>
+      <img src="images/404.JPEG" alt="Male diving into a swimming pool with his arms extended in a t formation">
+      <p>
+        The page you are looking for can't be found.
+      <p>
+    </div>
+  </main>
+  <footer>
+    <nav>
+      <ul class="navbar">
+        <li><a href="about25.html">About The Team</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="https://drive.google.com/file/d/1ZMWpub2MPij5LmCH1Y02P-vvaJ_UTEcc/view?rtpof=true&sd=true">Team
+            Constitution</a></li>
+        <li><a href="dev-team.html">Dev Team</a></li>
+      </ul>
+      <p>
+        This project is maintained by the Gamecock Club Swim team and is not
+        affiliated with the University of South Carolina.
+      </p>
+    </nav>
+  </footer>
 </body>
 
 </html>

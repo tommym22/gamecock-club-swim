@@ -1,110 +1,214 @@
-/* TODO: Use Bootstrap to make this mobile friendly
+/* TODO: Remove background from logo, change color scheme so it doesn't strain eyes */
 
+/* Looked up how to use custom fonts, this allows me to use Google Fonts for free! */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-This code helps create the dropdowns on each page */
-.more-links-dropdown {
-    position: relative;
-    display: inline-block;
-    border-right: none;
+body {
+    font-family: "Open Sans";
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
   }
-.more-links-sub-dropdown{
-    display: none; /*hides the links by default */
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); creates a shadow to make the dropdown stand out */
-    padding: 12px 16px;
-    z-index: 1;
-    border: solid 0.01rem;
-}
-.more-links-dropdown:hover .more-links-sub-dropdown {
-    display: block;
-}
-.registration-dropdown {
-    position: relative;
-    display: inline-block;
+  
+  /* Header and Navigation */
+  header {
     width: 100%;
-}
-.registration-sub-dropdown{
+    background-color: white;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .navbar {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 30px;
+  }
+  
+  .navbar > li {
+    margin-right: 20px;
+    position: relative;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 350;
+    padding: 10px 0;
+    display: inline-block;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Dropdown Styling */
+  .more-links-dropdown {
+    position: relative;
+  }
+  
+  .dropdown-arrow {
+    font-size: 10px;
+    margin-left: 5px;
+  }
+  
+  .more-links-sub-dropdown {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
-    padding: 12px 16px;
-    z-index: 1;
-    border: solid 0.01rem;
-    left: 100%;
-    top: -12px;
-}
-.registration-dropdown:hover .registration-sub-dropdown {
-    display: block;
-}
-
-body{
-    font-size: 16px;
-    line-height: 1.5;
-    font-family:Arial, Helvetica, sans-serif;
-    margin: 0;
-}
-header, nav ul{
-    width: 90%;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-}
-header h1, nav ul{
-    padding-left: 50px;
-}
-
-/*  Navbar */
-nav{
-    display: flex;
-    background-color:white;
-    align-items:center;
-    text-align: left;
-    position: absolute;
-    left: 0;
-    padding-left: 1rem;
-    padding-top: 4rem;
-}
-nav ul{list-style-type: none;} /* Gets rid of list dots */
-nav ul li{display:inline-block}
-nav a {
-    display:inline-flex;
-    /* padding:1rem; */
-    color: black;
-    text-decoration: none;
-    vertical-align: middle;
-    font-weight: lighter;
-    padding: 1rem;
-}
-nav a:hover, .registration-dropdown:hover, .more-links-dropdown:hover{
-    text-decoration: underline;
-}
-
-h1{
-    border: solid 1px;
-    border-left: none;
-    border-right: none;
-    font-weight: lighter;
-    text-align: center;
-    display:block;
-    position: relative;
-    top:1rem;
-}
-body{
     background-color: white;
+    min-width: 180px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    z-index: 1;
+    padding: 10px 0;
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+  }
+  
+  .more-links-sub-dropdown li {
+    display: block;
+    margin: 0;
+  }
+  
+  .more-links-sub-dropdown a {
+    padding: 8px 15px;
+    display: block;
+  }
+  
+  .more-links-dropdown:hover .more-links-sub-dropdown {
+    display: block;
+  }
+  
+  /* Registration Sub-dropdown */
+  .registration-dropdown {
+    position: relative;
+  }
+  
+  .registration-sub-dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 180px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    z-index: 2;
+    padding: 10px 0;
+    border-radius: 5px;
+    left: 100%;
+    top: 0;
+  }
+  
+  .registration-dropdown:hover .registration-sub-dropdown {
+    display: block;
+  }
+  
+  /* Header Banner */
+  h1 {
+    text-align: center;
+    padding: 15px 0;
+    margin: 0;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    font-weight: 400;
+  }
+  /* Add these styles to your style.css file */
+
+/* Main content styling */
+main {
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 0 20px;
+  }
+  
+  /* Section headings */
+  main h2 {
+    font-size: 48px;
+    font-weight: normal;
+    margin: 30px 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  /* Horizontal dividers */
+  main section {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+  
+  /* About text styling */
+  main p {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    font-weight: 300;
+  }
+  
+  /* Board member headings */
+  main h3 {
+    font-size: 32px;
+    font-weight: normal;
+    margin: 30px 0;
+  }
+  
+  /* Board member layout - for the two-column layout */
+  .member {
+    margin-bottom: 40px;
+  }
+  
+  .member h3 {
+    width: 100%;
+    font-size: 24px;
+  }
+  
+  .member-photo {
+    width: 30%;
+    display: block;
+    height: auto;
+  }
+  
+  .member-bio {
+    width: 70%;
+  }
+  .member-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px 50px;
+    width: 100%;
+    align-content: center;
+  }
+footer nav{
+    font-size: 12px;
 }
-nav ul li a{
-    vertical-align: middle;
+footer nav p{
+    padding-left: 15px;
 }
-nav ul li li{
+.uh-oh img{
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+    width: auto;
+    height: 500px;
+    padding-top: 10px;
+}
+.uh-oh p{
+    display: block; 
+    padding-left: auto; 
+    margin-right: auto;
+    text-align: center;
+}
+.uh-oh h1{
     border: none;
-}
-footer nav ul li{
-    border: none;
-}
-.logo{
-    block-size: 82px;
 }
