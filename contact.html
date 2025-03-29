@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--TODO: Add some sort of status when submitted, sent/couldn't send-->
 
 <head>
   <!-- Google tag (gtag.js) -->
@@ -70,33 +71,48 @@
         </li>
       </ul>
     </nav>
-    <h1>Election Results Are Now Available!</h1>
+    <h1>Good Luck To Our Swimmers at Nationals!</h1>
   </header>
   <!--Main section-->
   <main>
+    <h3>🚧 Adding Functionality Soon! 🚧</h3>
     <h2>Contact Us</h2>
-    <!--TODO: Want to send email from this form, not sure how though-->
     <form action="email" method="POST">
-      <label for="member-status">New or returning member?</label>
-      <select id="member-status" name="member-status">
-        <option value="new-member">New</option>
-        <option value="returning-member">Returning</option>
-      </select>
-      <br>
-      <label for="name"> Name:</label>
-      <input type="text" id="name" required>
-      <br>
-      <label for="email">Email:</label>
-      <input type="email" id="email" placeholder="name@domain.com" required>
-      <br>
-      <label for="phone-number">Phone Number:</label>
-      <input type="tel" id="phone-number" placeholder="(###)###-####">
-      <br>
-      <label for="message">Message:</label>
-      <input type="text" id="message" required>
-      <br>
-      <button>Submit</button>
+      <div class="form-group">
+        <label for="member-status">New or Returning Member <span class="required">(required)</span></label>
+        <select id="member-status" name="member-status" required>
+          <option value="" selected disabled>Select an option </option>
+          <option value="new-member">New</option>
+
+          <option value="returning-member">Returning</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="name">Name <span class="required">(required)</span></label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email <span class="required">(required)</span></label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone-number">Phone</label>
+        <input type="tel" id="phone-number" name="phone">
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message <span class="required">(required)</span></label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+
+      <div class="form-button">
+        <button type="submit" class="submit-button">Contact Us</button>
+      </div>
     </form>
+  </main>
   </main>
 
   <!--Footer of the page, contains heading, team logo, and a smaller version of the nav bar-->
