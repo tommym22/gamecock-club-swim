@@ -193,7 +193,7 @@ main h3 {
     width: 100%;
     align-content: center;
 }
-footer nav{
+.container footer{
     font-size: 12px;
 }
 footer nav p{

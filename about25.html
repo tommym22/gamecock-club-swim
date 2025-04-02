@@ -12,6 +12,7 @@
     gtag("js", new Date());
     gtag("config", "G-NWNW17BXGE");
   </script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta name="keywords"
@@ -19,155 +20,169 @@
   <meta name="author" content="Gamecock Club Swim">
   <meta name="description" content="Gamecock Club Swim Website">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gamecock Club Swim: About</title>
+  <title>GCS: About</title>
 </head>
 
 <body>
   <!--Contains the nav menu-->
   <header>
-    <nav>
-      <!--TODO: change the image sizes w/CSS-->
-      <a href="index.html">
-        <img src="images/team-logo.jpg" class="logo"
-          alt="Circle with the South Carolina Gamecock logo surrounded by text that reads 'Gamecock Club Swimming'">
-      </a>
-      <ul class="navbar">
-        <!--TODO: Remove index.html in final product-->
-        <li><a href="about25.html">About The Team</a></li>
-        <li><a href="faqs.html">FAQs</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <!--More links currently takes you to 404 page :( -->
-        <li class="more-links-dropdown">
-          <a href="#">More Links <span class="dropdown-arrow">▼</span></a>
-          <ul class="more-links-sub-dropdown">
-            <li>
-              <a href="https://drive.google.com/drive/folders/1xQOK-YKnYAgTUZdeBpT_wYjNcYZJDCp_?usp=sharing">Practice
-                Logs</a>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/team-logo.jpg" class="logo"
+            alt="Circle with the South Carolina Gamecock logo surrounded by text that reads 'Gamecock Club Swimming'">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="about25.html">About The Team</a>
             </li>
-            <li>
-              <a href="https://drive.google.com/drive/folders/1thAzTgNY29F9XdZfnlzp68hA_TFqOYns">Records and National
-                Cuts</a>
+            <li class="nav-item">
+              <a class="nav-link" href="faqs.html">FAQs</a>
             </li>
-            <li class="registration-dropdown">
-              <a href="#">Registration<span class="dropdown-arrow">▶</span></a>
-              <ul class="registration-sub-dropdown">
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="registration.html">Registration</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown">
+                More Links
+              </a>
+              <ul class="dropdown-menu">
                 <li>
-                  <a href="https://garnetgate.sa.sc.edu/organization/clubswimming">Garnet Gate</a>
+                  <a class="dropdown-item" href="https://www.facebook.com/groups/807592326601438/">Alumni Network</a>
                 </li>
                 <li>
-                  <a href="https://sc.dserec.com/online/clubsports">DSE Registration</a>
+                  <a class="dropdown-item"
+                    href="https://drive.google.com/file/d/1ZMWpub2MPij5LmCH1Y02P-vvaJ_UTEcc/view?rtpof=true&sd=true">Constitution</a>
                 </li>
                 <li>
-                  <a href="https://www.collegeclubswimming.com/page.cfm?pagetitle=Individual+Registration">CCS
-                    Registration</a>
+                  <a class="dropdown-item"
+                    href="https://drive.google.com/drive/folders/1xQOK-YKnYAgTUZdeBpT_wYjNcYZJDCp_?usp=sharing">Practice
+                    Logs</a>
                 </li>
+                <li>
+                  <a class="dropdown-item"
+                    href="https://drive.google.com/drive/folders/1thAzTgNY29F9XdZfnlzp68hA_TFqOYns">Team Records</a>
+                </li>
+
               </ul>
             </li>
-            <li>
-              <a href="https://www.facebook.com/groups/807592326601438/">Alumni Network</a>
-            </li>
           </ul>
-        </li>
-      </ul>
+        </div>
+      </div>
     </nav>
     <h1>Good Luck To Our Swimmers at Nationals!</h1>
   </header>
 
   <!--Main Section of homepage-->
   <main>
-    <!--About Section of the site-->
     <section>
-      <h2>About The Team</h2>
-      <p>
-        Welcome! Gamecock Club Swim is an organization for active, retired, or
-        new athletes interested in competitive swimming. We offer practices
-        for all skill levels, Monday through Thursday. Each semester, the team
-        travels to competitions, swimming against, but also interacting with
-        other collegiate club swim teams. GCS is a blast and we hope to see
-        you soon!
-      </p>
+      <div class="container">
+        <h2 class="mb-4">About The Team</h2>
+        <p class="lead">
+          Welcome! Gamecock Club Swim is an organization for active, retired, or
+          new athletes interested in competitive swimming. We offer practices
+          for all skill levels, Monday through Thursday. Each semester, the team
+          travels to competitions, swimming against, but also interacting with
+          other collegiate club swim teams. GCS is a blast and we hope to see
+          you soon!
+        </p>
+      </div>
     </section>
     <!--Section of the site that lists the board members-->
     <section>
-      <!--Lists Executive Board members-->
-      <h2>Executive Board Members</h2>
-      <div class="member-container">
-        <div class="member">
-          <h3>President</h3>
-          <div class="member-photo">
-            <img src="images/beth-warren-president.jpg"
-              alt="Woman in dark blue dress with polka dots, standing in front of a brick wall." width="200">
+      <div class="container">
+        <h2 class="my-4 pb-2 border-bottom">Executive Board Members</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/beth-warren-president.jpg" class="card-img-top"
+                alt="Woman in dark blue dress with polka dots, standing in front of a brick wall." style="obj">
+            </div>
+            <h3>President</h3>
+            <div class="member-photo">
+
+            </div>
+            <div class="member-bio">
+              <p>
+                I'm Beth Warren, and I'm a Marketing and HR Management double
+                major from Glendale, IL. I started swimming competitively when I
+                was 4 and thought I was done with the sport after high school.
+                Luckily, the president my freshman year was a family friend and I
+                met people who convinced me to join. I've served as a Social Media
+                Co-Chair, Vice President, and now President. My leadership in GCS
+                has led me to serve on the College Club Swimming Advisory Board.
+                Outside of the pool, I'm in the Honors College, a service sorority
+                (ESA), and am the secretary of the Sport Club Executive Board. I
+                love arts and crafts, sharks, and reading!
+              </p>
+            </div>
           </div>
-          <div class="member-bio">
-            <p>
-              I'm Beth Warren, and I'm a Marketing and HR Management double
-              major from Glendale, IL. I started swimming competitively when I
-              was 4 and thought I was done with the sport after high school.
-              Luckily, the president my freshman year was a family friend and I
-              met people who convinced me to join. I've served as a Social Media
-              Co-Chair, Vice President, and now President. My leadership in GCS
-              has led me to serve on the College Club Swimming Advisory Board.
-              Outside of the pool, I'm in the Honors College, a service sorority
-              (ESA), and am the secretary of the Sport Club Executive Board. I
-              love arts and crafts, sharks, and reading!
-            </p>
+          <div class="member">
+            <h3>Vice President</h3>
+            <div class="member-photo">
+              <img src="images/default-icon.jpg" alt="Blank gray icon of a person's head shot" width="200">
+            </div>
+            <div class="member-bio">
+              <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum."
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="member">
-          <h3>Vice President</h3>
-          <div class="member-photo">
-            <img src="images/default-icon.jpg" alt="Blank gray icon of a person's head shot" width="200">
+          <div class="member">
+            <h3>Secretary</h3>
+            <div class="member-photo">
+              <img src="images/ben-atwood-secretary.jpg" alt="Two men standing next to each other wearing suits"
+                width="200">
+            </div>
+            <div class="member-bio">
+              <p>
+                My name is Ben Atwood, I am a junior finance and marketing major
+                from Charleston, SC. I am the secretary of the club swim team at
+                USC. I have swam my whole life, and going into college I wanted to
+                join the club swim team to make friends and stay in shape. I have
+                really enjoyed being able to become so involved, and it has really
+                enhanced my college experience. Other than swimming, I enjoy
+                playing basketball, hanging out with my friends, and playing
+                guitar.
+              </p>
+            </div>
           </div>
-          <div class="member-bio">
-            <p>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum."
-            </p>
-          </div>
-        </div>
-        <div class="member">
-          <h3>Secretary</h3>
-          <div class="member-photo">
-            <img src="images/ben-atwood-secretary.jpg" alt="Two men standing next to each other wearing suits"
-              width="200">
-          </div>
-          <div class="member-bio">
-            <p>
-              My name is Ben Atwood, I am a junior finance and marketing major
-              from Charleston, SC. I am the secretary of the club swim team at
-              USC. I have swam my whole life, and going into college I wanted to
-              join the club swim team to make friends and stay in shape. I have
-              really enjoyed being able to become so involved, and it has really
-              enhanced my college experience. Other than swimming, I enjoy
-              playing basketball, hanging out with my friends, and playing
-              guitar.
-            </p>
-          </div>
-        </div>
-        <div class="member">
-          <h3>Treasurer</h3>
-          <div class="member-photo">
-            <img src="images/colin-treasurer.png"
-              alt="Man standing in front of a blurred, blue background wearing a suit" width="200">
-          </div>
-          <div class="member-bio">
-            <p>
-              My name is Colin schmidt I am a senior from Richmond, Virginia
-              double majoring in finance and accounting. I have been swimming
-              since I joined our neighborhood summer league team when I was 5
-              years old. I primarily swim backstroke and freestyle with my
-              favorite event being the 50 free. Alongside serving as treasurer
-              of gamecock club swim, I also coach for a year round high school
-              team.
-            </p>
+          <div class="member">
+            <h3>Treasurer</h3>
+            <div class="member-photo">
+              <img src="images/colin-treasurer.png"
+                alt="Man standing in front of a blurred, blue background wearing a suit" width="200">
+            </div>
+            <div class="member-bio">
+              <p>
+                My name is Colin schmidt I am a senior from Richmond, Virginia
+                double majoring in finance and accounting. I have been swimming
+                since I joined our neighborhood summer league team when I was 5
+                years old. I primarily swim backstroke and freestyle with my
+                favorite event being the 50 free. Alongside serving as treasurer
+                of gamecock club swim, I also coach for a year round high school
+                team.
+              </p>
+            </div>
           </div>
         </div>
       </div>
+      <!--Lists Executive Board members-->
+
 
       <!--Lists chair members-->
       <h2>Chair Members</h2>
@@ -315,21 +330,24 @@
 
   <!--Footer of the page, contains heading, team logo, and a smaller version of the nav bar-->
   <footer>
-    <nav>
-      <ul class="navbar">
-        <li><a href="about25.html">About The Team</a></li>
-        <li><a href="faqs.html">FAQs</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="https://drive.google.com/file/d/1ZMWpub2MPij5LmCH1Y02P-vvaJ_UTEcc/view?rtpof=true&sd=true">Team
-            Constitution</a></li>
-        <li><a href="dev-team.html">Dev Team</a></li>
-      </ul>
-      <p>
-        This project is maintained by the Gamecock Club Swim team and is not
-        affiliated with the University of South Carolina.
-      </p>
-    </nav>
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="about25.html" class="nav-link px-2 text-body-secondary">About</a></li>
+          <li class="nav-item"><a href="faqs.html" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-body-secondary">Contact Us</a></li>
+          <li class="nav-item"><a href="registration.html" class="nav-link px-2 text-body-secondary">Registration</a>
+          </li>
+          <li class="nav-item"><a href="dev-team.html" class="nav-link px-2 text-body-secondary">Dev Team</a></li>
+        </ul>
+        <p class="text-center text-body-secondary">This project is maintained by the Gamecock Club Swim team and is not
+          affiliated with the University of South Carolina.</p>
+      </footer>
+    </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

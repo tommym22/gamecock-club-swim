@@ -1,3 +1,4 @@
+<!--Had to include Bootstrap JS for the navbar to work-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,6 +13,7 @@
     gtag("js", new Date());
     gtag("config", "G-NWNW17BXGE");
   </script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta name="keywords"
@@ -20,54 +22,63 @@
   <meta name="description" content="Gamecock Club Swim Website">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Gamecock Club Swim: Home</title>
+  <title>GCS: Home</title>
 </head>
 
 <body>
-  <!--Contains the nav menu-->
+  <!--Contains the nav menu, switched from custom one to bootstrap for mobile friendlieness-->
   <header>
-    <nav>
-      <!--TODO: change the image sizes w/CSS-->
-      <a href="index.html">
-        <img src="images/team-logo.jpg" class="logo"
-          alt="Circle with the South Carolina Gamecock logo surrounded by text that reads 'Gamecock Club Swimming'">
-      </a>
-      <ul class="navbar">
-        <li><a href="about25.html">About The Team</a></li>
-        <li><a href="faqs.html">FAQs</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li class="more-links-dropdown">
-          <a href="#">More Links<span class="dropdown-arrow">▼</span></a>
-          <ul class="more-links-sub-dropdown">
-            <li>
-              <a href="https://drive.google.com/drive/folders/1xQOK-YKnYAgTUZdeBpT_wYjNcYZJDCp_?usp=sharing">Practice
-                Logs</a>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/team-logo.jpg" class="logo"
+            alt="Circle with the South Carolina Gamecock logo surrounded by text that reads 'Gamecock Club Swimming'">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="about25.html">About The Team</a>
             </li>
-            <li>
-              <a href="https://drive.google.com/drive/folders/1thAzTgNY29F9XdZfnlzp68hA_TFqOYns">Records and National
-                Cuts</a>
+            <li class="nav-item">
+              <a class="nav-link" href="faqs.html">FAQs</a>
             </li>
-            <li class="registration-dropdown">
-              <a href="#">Registration<span class="dropdown-arrow">▶</span></a>
-              <ul class="registration-sub-dropdown">
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="registration.html">Registration</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown">
+                More Links
+              </a>
+              <ul class="dropdown-menu">
                 <li>
-                  <a href="https://garnetgate.sa.sc.edu/organization/clubswimming">Garnet Gate</a>
+                  <a class="dropdown-item" href="https://www.facebook.com/groups/807592326601438/">Alumni Network</a>
                 </li>
                 <li>
-                  <a href="https://sc.dserec.com/online/clubsports">DSE Registration</a>
+                  <a class="dropdown-item"
+                    href="https://drive.google.com/file/d/1ZMWpub2MPij5LmCH1Y02P-vvaJ_UTEcc/view?rtpof=true&sd=true">Constitution</a>
                 </li>
                 <li>
-                  <a href="https://www.collegeclubswimming.com/page.cfm?pagetitle=Individual+Registration">CCS
-                    Registration</a>
+                  <a class="dropdown-item"
+                    href="https://drive.google.com/drive/folders/1xQOK-YKnYAgTUZdeBpT_wYjNcYZJDCp_?usp=sharing">Practice
+                    Logs</a>
                 </li>
+                <li>
+                  <a class="dropdown-item"
+                    href="https://drive.google.com/drive/folders/1thAzTgNY29F9XdZfnlzp68hA_TFqOYns">Team Records</a>
+                </li>
+
               </ul>
             </li>
-            <li>
-              <a href="https://www.facebook.com/groups/807592326601438/">Alumni Network</a>
-            </li>
           </ul>
-        </li>
-      </ul>
+        </div>
+      </div>
     </nav>
     <!--This would be a blog post-->
     <h1>Good Luck To Our Swimmers at Nationals!</h1>
@@ -147,21 +158,24 @@
 
   <!--Footer of the page, contains heading, team logo, and a smaller version of the nav bar-->
   <footer>
-    <nav>
-      <ul class="navbar">
-        <li><a href="about25.html">About The Team</a></li>
-        <li><a href="faqs.html">FAQs</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="https://drive.google.com/file/d/1ZMWpub2MPij5LmCH1Y02P-vvaJ_UTEcc/view?rtpof=true&sd=true">Team
-            Constitution</a></li>
-        <li><a href="dev-team.html">Dev Team</a></li>
-      </ul>
-      <p>
-        This project is maintained by the Gamecock Club Swim team and is not
-        affiliated with the University of South Carolina.
-      </p>
-    </nav>
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="about25.html" class="nav-link px-2 text-body-secondary">About</a></li>
+          <li class="nav-item"><a href="faqs.html" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-body-secondary">Contact Us</a></li>
+          <li class="nav-item"><a href="registration.html" class="nav-link px-2 text-body-secondary">Registration</a>
+          </li>
+          <li class="nav-item"><a href="dev-team.html" class="nav-link px-2 text-body-secondary">Dev Team</a></li>
+        </ul>
+        <p class="text-center text-body-secondary">This project is maintained by the Gamecock Club Swim team and is not
+          affiliated with the University of South Carolina.</p>
+      </footer>
+    </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
