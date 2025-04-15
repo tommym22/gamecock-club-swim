@@ -6,25 +6,20 @@
 /* Looked up how to use custom fonts, this allows me to use Google Fonts for free! */
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-:root {
-  /*Color Scheme Follows University Brand Guidelines*/
-  /*Updated Bootstrap CSS Background Colors*/
-  .bg-garnet { background-color: #73000a; }
-  .bg-70-black{background-color: #5C5C5C;}
-  .bg-sandstorm { background-color: #FFF2E3; }
-  .bg-10-black { background-color: #ECECEC; }
-  .bg-azalea{background-color: #844247 ;}
-  .bg-90-black{background-color: #363636; ;}
-  /*Updated Bootstrap CSS Text Colors*/
-  .text-garnet { color: #73000a; }
-  .text-warm-grey { color: #676156; }
-  .text-70-black { color: #5C5C5C; }
-  .text-50-black { color: #A2A2A2; }
-  .text-congaree { color: #1F414D; }
-  .text-horseshoe { color: #65780B; }
-  .text-sandstorm{color: #FFF2E3;}
-  .text-10-black { background-color: #ECECEC; }
-}
+/*Color Scheme Follows University Brand Guidelines*/
+/*Updated Bootstrap CSS Background Colors*/
+.bg-70-black{background-color: #5C5C5C;}
+.bg-10-black { background-color: #ECECEC; }
+.bg-garnet { background-color: #73000a; }
+/*Updated Bootstrap CSS Text Colors*/
+.text-garnet { color: #73000a; }
+.text-70-black { color: #5C5C5C; }
+.text-sandstorm{color: #FFF2E3;}
+.text-10-black { background-color: #ECECEC; }
+/*Updated Bootstrap CSS Border Colors*/
+.border-garnet { border-color: #73000a !important; }
+.border-30-black{border-color: #C7C7C7 !important;}
+
 body {
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     margin: 0;
@@ -72,12 +67,8 @@ body {
     padding: 10px 0;
     display: inline-block;
   }
-  .navbar a img:hover {
-    background-color:none;
-    color: none;
-  }
   .navbar a:hover {
-    text-decoration: underline var(--bs-primary);
+    text-decoration: underline #73000a;
     font-weight: 400;
   }
   
@@ -118,11 +109,6 @@ body {
     display: block;
   }
   
-  /* Registration Sub-dropdown */
-  .registration-dropdown {
-    position: relative;
-  }
-
   /* Header Banner */
   h1 {
     text-align: center;
@@ -132,7 +118,6 @@ body {
     border-bottom: 1px solid #e0e0e0;
     font-weight: 400;
   }
-  /* Add these styles to your style.css file */
 
 /* Main content styling */
 main {
