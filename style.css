@@ -1,12 +1,30 @@
 /* 
     TODO: Add RSS Support for a blog system
-    TODO: Remove background from logo, change color scheme so it doesn't strain eyes 
+    TODO: Remove background from logo, 
     TODO: Fix image sizing so it doesn't look so weird/stretched out
 */
-
 /* Looked up how to use custom fonts, this allows me to use Google Fonts for free! */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+:root {
+  /*Color Scheme Follows University Brand Guidelines*/
+  /*Updated Bootstrap CSS Background Colors*/
+  .bg-garnet { background-color: #73000a; }
+  .bg-70-black{background-color: #5C5C5C;}
+  .bg-sandstorm { background-color: #FFF2E3; }
+  .bg-10-black { background-color: #ECECEC; }
+  .bg-azalea{background-color: #844247 ;}
+  .bg-90-black{background-color: #363636; ;}
+  /*Updated Bootstrap CSS Text Colors*/
+  .text-garnet { color: #73000a; }
+  .text-warm-grey { color: #676156; }
+  .text-70-black { color: #5C5C5C; }
+  .text-50-black { color: #A2A2A2; }
+  .text-congaree { color: #1F414D; }
+  .text-horseshoe { color: #65780B; }
+  .text-sandstorm{color: #FFF2E3;}
+  .text-10-black { background-color: #ECECEC; }
+}
 body {
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     margin: 0;
@@ -54,9 +72,13 @@ body {
     padding: 10px 0;
     display: inline-block;
   }
-  
+  .navbar a img:hover {
+    background-color:none;
+    color: none;
+  }
   .navbar a:hover {
-    text-decoration: underline;
+    text-decoration: underline var(--bs-primary);
+    font-weight: 400;
   }
   
   /* Dropdown Styling */
@@ -100,24 +122,7 @@ body {
   .registration-dropdown {
     position: relative;
   }
-  
-  .registration-sub-dropdown {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 180px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-    z-index: 2;
-    padding: 10px 0;
-    border-radius: 5px;
-    left: 100%;
-    top: 0;
-  }
-  
-  .registration-dropdown:hover .registration-sub-dropdown {
-    display: block;
-  }
-  
+
   /* Header Banner */
   h1 {
     text-align: center;
@@ -231,21 +236,6 @@ footer nav p{
     justify-content: center;
     opacity: 0;
     animation: 36s slideshow infinite ease-in-out;
-}
-
-#slides > div:nth-child(1) { animation-delay: 0s; }
-#slides > div:nth-child(2) { animation-delay: 6s; }
-#slides > div:nth-child(3) { animation-delay: 12s; }
-#slides > div:nth-child(4) { animation-delay: 18s; }
-#slides > div:nth-child(5) { animation-delay: 24s; }
-#slides > div:nth-child(6) { animation-delay: 30s; }
-
-@keyframes slideshow {
-    0% { opacity: 0; }
-    5% { opacity: 1; }
-    15% { opacity: 1; }
-    20% { opacity: 0; }
-    100% { opacity: 0; }
 }
 
 /* Contact Form Styling */
