@@ -136,46 +136,18 @@
           <td>
             <strong>A:</strong> We have usually have competitions from North
             Carolina all the way down to Florida.
-          </td>
-        </tr>
-      </table>
-      <br>
-      <table>
-        <tr>
+         
           <td><strong>How do I sign up for meets?</strong></td>
         </tr>
         <tr>
           <td>
             <strong>A:</strong> Roughly two weeks before the competition, an
             email will be sent out with an interest form.
-          </td>
-        </tr>
-      </table>
-      <br>
-      <table>
-        <tr>
+        
           <td><strong> Does everyone get to travel?</strong></td>
-        </tr>
-        <tr>
-          <td>
+      
             <strong>A:</strong> Everyone is eligible to fill out the meet
             interest form. However, due to limited available space at
             competitions, people are chosen on a first come first serve
             basis.<strong> Everyone can swim at home meets.</strong>
-          </td>
-        </tr>
-      </table>
-      <br>
-      <table>
-        <tr>
-          <td><strong> Do I need to go to every practice?</strong></td>
-        </tr>
-        <tr>
-          <td>
-            <strong>A:</strong> You can go to as many or as little practices
-            as you’d like.
-          </td>
-        </tr>
-      </table>
-      <br>
-    </section>
+     

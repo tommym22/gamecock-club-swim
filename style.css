@@ -14,8 +14,9 @@
 /*Updated Bootstrap CSS Text Colors*/
 .text-garnet { color: #73000a; }
 .text-70-black { color: #5C5C5C; }
-.text-sandstorm{color: #FFF2E3;}
+.text-50-black{color:#A2A2A2;}
 .text-10-black { background-color: #ECECEC; }
+.text-sandstorm{color: #FFF2E3;}
 /*Updated Bootstrap CSS Border Colors*/
 .border-garnet { border-color: #73000a !important; }
 .border-30-black{border-color: #C7C7C7 !important;}
@@ -62,7 +63,7 @@ body {
   
   .navbar a {
     text-decoration: none;
-    color: #333;
+    color: black;
     font-weight: 350;
     padding: 10px 0;
     display: inline-block;
@@ -114,8 +115,8 @@ body {
     text-align: center;
     padding: 15px 0;
     margin: 0;
-    border-top: 1px solid #e0e0e0;
-    border-bottom: 1px solid #e0e0e0;
+    border-top: 1px solid #C7C7C7;
+    border-bottom: 1px solid #C7C7C7;
     font-weight: 400;
   }
 
@@ -132,12 +133,12 @@ main h2 {
     font-weight: normal;
     margin: 30px 0;
     padding-bottom: 15px;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid #c7c7c7;
 }
   
   /* Horizontal dividers */
 main section {
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid #c7c7c7;
     padding-bottom: 30px;
     margin-bottom: 30px;
 }
@@ -205,23 +206,6 @@ footer nav p{
 .uh-oh h1{
     border: none;
 }
-#slides {
-    padding-top: 10px;
-    position: relative; 
-    overflow: hidden;
-    width: 100%;
-    height: 400px;
-}
-
-#slides > div {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    opacity: 0;
-    animation: 36s slideshow infinite ease-in-out;
-}
 
 /* Contact Form Styling */
 form {
@@ -242,7 +226,7 @@ form {
   
   .required {
     font-weight: normal;
-    color:rgba(151, 146, 146, 0.844);
+    color:#A2A2A2;
   }
   
   input[type="text"],
@@ -252,12 +236,16 @@ form {
   textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid lightgray;
+    border: 1px solid #c7c7c7;
     border-radius: 4px;
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
   }
-  
+  input:focus, textarea:focus, select:focus{
+    border-color: #73000a;
+    box-shadow: 0 0 5px rgba(115, 0, 10, 0.25); /*Gives the border a lil glow*/
+    outline: none;
+  }
   select {
     appearance: none;
     -webkit-appearance: none;
@@ -273,8 +261,9 @@ form {
   }
   
   .submit-button {
-    background-color: black;
-    color: white;
+    background-color: #73000a;
+    border-color: #73000a;
+    color: #ffffff;
     padding: 12px 30px;
     border-radius: 50px;
     border: none;
@@ -283,7 +272,7 @@ form {
   }
   
   .submit-button:hover {
-    background-color: #444;
+    background-color: #570008;
   }
   
   .form-button {
