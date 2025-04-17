@@ -55,53 +55,42 @@ body {
     font-weight: 400;
   }
 
-/* Main content styling */
-main {
-    max-width: 1200px;
-    margin: 10px auto;
-    padding: 0 20px;
-}
-  
 /* Section headings */
-main h2 {
+  h2 {
     font-size: 48px;
     font-weight: normal;
     margin: 30px 0;
     padding-bottom: 15px;
     border-bottom: 1px solid #c7c7c7;
-}
+  }
   
   /* Horizontal dividers */
-main section {
+  section {
     border-bottom: 1px solid #c7c7c7;
     padding-bottom: 30px;
     margin-bottom: 30px;
-}
+  }
   
-  /* About text styling */
-main p {
+  h3 {
+    font-size: 32px;
+    font-weight: normal;
+    margin: 30px 0;
+  }
+
+  p {
     font-size: 24px;
     line-height: 1.5;
     margin-bottom: 30px;
     font-weight: 300;
-}
-  
-/* Board member headings */
-main h3 {
-    font-size: 32px;
-    font-weight: normal;
-    margin: 30px 0;
-}
-  
-/* Board member layout - for the two-column layout */
+  }
 
-.container footer{
-    font-size: 12px;
-}
-footer nav p{
-    padding-left: 15px;
+.container{
+  padding-top: 10px;
 }
 
+.container footer p{
+    font-size: 14px;
+}
 /* Contact Form Styling */
 form {
     max-width: 600px;
