@@ -1,8 +1,4 @@
-/* 
-    TODO: Add RSS Support for a blog system
-    TODO: Remove background from logo, 
-    TODO: Fix image sizing so it doesn't look so weird/stretched out
-*/
+
 /* Looked up how to use custom fonts, this allows me to use Google Fonts for free! */
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
@@ -13,10 +9,7 @@
 .bg-garnet { background-color: #73000a; }
 /*Updated Bootstrap CSS Text Colors*/
 .text-garnet { color: #73000a; }
-.text-70-black { color: #5C5C5C; }
-.text-50-black{color:#A2A2A2;}
 .text-10-black { background-color: #ECECEC; }
-.text-sandstorm{color: #FFF2E3;}
 /*Updated Bootstrap CSS Border Colors*/
 .border-garnet { border-color: #73000a !important; }
 .border-30-black{border-color: #C7C7C7 !important;}
@@ -189,22 +182,6 @@ main h3 {
 }
 footer nav p{
     padding-left: 15px;
-}
-.uh-oh img{
-    display: block; 
-    margin-left: auto; 
-    margin-right: auto;
-    width: auto;
-    height: 500px;
-    padding-top: 10px;
-}
-.uh-oh p{
-    display: block; 
-    margin-right: auto;
-    text-align: center;
-}
-.uh-oh h1{
-    border: none;
 }
 
 /* Contact Form Styling */
