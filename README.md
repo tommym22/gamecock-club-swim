@@ -1,6 +1,6 @@
 # Gamecock Club Swimming Website
 
-![Logo](/images/team-logo.jpg)
+![Logo](/images/team-logo.avif)
 
 This repository contains the source code for the University of South Carolina's Gamecock Club Swimming team website. The site provides information about the team, schedules, FAQs, and resources for current and prospective members.
 
@@ -10,27 +10,23 @@ The website serves as a one-stop-shop for everything related to Gamecock Club Sw
 
 - Team information and exec/chair members
 - Calendar featuring practice and meet schedules
-- Registration links and resources
-- Photo gallery
 - Contact information
 - Instagram integration
+- Additional resources
 
 ## Development Resources & Attributions
 
 The following resources were used in the development of this website:
 
-### Navigation Components
-
-- Submenu dropdown navigation: Adapted from W3Schools tutorial on subnav menus
-  - Source: <https://www.w3schools.com/howto/howto_css_subnav.asp>
-- Custom 404 Error message
-  - Source: <https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site>
-
-### Visual Components
-
-- Image gallery scrolling functionality: Adapted from W3Schools image gallery scroll tutorial
-  - Source: <https://www.w3schools.com/howto/howto_css_image_gallery_scroll.asp>
-  - Source: <https://jekyllrb.com/docs/step-by-step/01-setup/>
+- Bootstrap 5.3 documentation: <https://getbootstrap.com>
+- University of South Carolina brand toolkit: <https://sc.edu/about/offices_and_divisions/communications/toolbox/visuals/colors/>
+- Squoosh: Converted the large jpeg and jpg files to the much more compressed avif type
+  - Website: <https://squoosh.app>
+- Claude AI: Helped explain how Bootstrap worked and produced code snippets
+  - Website: <https://claude.ai>
+- Google Fonts: <https://fonts.google.com>
+- Formspree: Allows contact form responses to get sent to the support email I created
+  - Website: <https://formspree.io>
 
 ### External Integrations
 
@@ -38,14 +34,6 @@ The following resources were used in the development of this website:
   - Documentation: <https://developers.facebook.com/docs/instagram/embedding/>
 - Google Calendar embed: Using Google Calendar iframe embedding
   - Documentation: <https://support.google.com/calendar/answer/41207>
-
-## Future Development Plans
-
-Coming Soon:
-
-- Blog system using Jekyll
-- Improved dropdown menu functionality for the "More Links" section
-- Responsive Web Design (for mobile viewing)
 
 ## Contributing
 
