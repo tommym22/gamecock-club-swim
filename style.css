@@ -272,7 +272,9 @@ form {
   }
   
   .submit-button:hover {
-    background-color: #570008;
+    background-color: #570008; /* Dark Garnet for hover */
+    box-shadow: 0 4px 8px rgba(115, 0, 10, 0.3);
+    transform: translateY(-2px);
   }
   
   .form-button {
