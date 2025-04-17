@@ -35,72 +35,14 @@ body {
     margin: 0 auto;
     position: relative;
   }
-  
-  .logo {
-    width: 80px;
-    height: 80px;
-  }
-  
-  .navbar {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    margin-left: 30px;
-  }
-  
-  .navbar > li {
-    margin-right: 20px;
-    position: relative;
-  }
-  
-  .navbar a {
-    text-decoration: none;
-    color: black;
-    font-weight: 350;
-    padding: 10px 0;
-    display: inline-block;
-  }
-  .navbar a:hover {
+  nav a:hover{
     text-decoration: underline #73000a;
     font-weight: 400;
   }
   
-  /* Dropdown Styling */
-  .more-links-dropdown {
-    position: relative;
-  }
-  
-  .dropdown-arrow {
-    font-size: 10px;
-    margin-left: 5px;
-  }
-  
-  .more-links-sub-dropdown {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 180px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-    z-index: 1;
-    padding: 10px 0;
-    border-radius: 5px;
-    top: 100%;
-    left: 0;
-  }
-  
-  .more-links-sub-dropdown li {
-    display: block;
-    margin: 0;
-  }
-  
-  .more-links-sub-dropdown a {
-    padding: 8px 15px;
-    display: block;
-  }
-  
-  .more-links-dropdown:hover .more-links-sub-dropdown {
-    display: block;
+  .logo {
+    width: 80px;
+    height: 80px;
   }
   
   /* Header Banner */
@@ -152,31 +94,7 @@ main h3 {
 }
   
   /* Board member layout - for the two-column layout */
-.member {
-    margin-bottom: 40px;
-}
-  
-.member h3 {
-    width: 100%;
-    font-size: 24px;
-}
-  
-.member-photo {
-    width: 30%;
-    display: block;
-    height: auto;
-}
-  
-.member-bio {
-    width: 70%;
-}
-.member-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 30px 50px;
-    width: 100%;
-    align-content: center;
-}
+
 .container footer{
     font-size: 12px;
 }
