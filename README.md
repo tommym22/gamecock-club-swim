@@ -27,6 +27,7 @@ The following resources were used in the development of this website:
 - Google Fonts: <https://fonts.google.com>
 - Formspree: Allows contact form responses to get sent to the support email I created
   - Website: <https://formspree.io>
+- W3Schools: <https://www.w3schools.com>
 
 ### External Integrations
 
@@ -34,6 +35,18 @@ The following resources were used in the development of this website:
   - Documentation: <https://developers.facebook.com/docs/instagram/embedding/>
 - Google Calendar embed: Using Google Calendar iframe embedding
   - Documentation: <https://support.google.com/calendar/answer/41207>
+
+### Learning Outcomes
+
+- Lighthouse said that my images were too large, so I used an avif file converter
+- Since this was going to be the offical site, it needed to be mobile friendly, so I used Bootstrap (5.3)
+  - This meant trashing the custom navigation menu I created.
+- The GCal embed looked too narrow on mobile, so I used AI to help generate code that swapped the mode based on screen size.
+  - It was also not the same size as the instagram embed, so I fixed that as well.
+- In order to be accessible, I needed to add a line of code that told the screen reader, "this dropdown is not visible."
+- Since registration isn't open yet, I used a gitignore file to hide the registration page from the site.
+- I also added a custom 404 page because I thought it looked cool.
+- I learned a bit about markdown and how it works
 
 ## Contributing
 
