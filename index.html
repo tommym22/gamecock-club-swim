@@ -12,7 +12,9 @@
     gtag("js", new Date());
     gtag("config", "G-NWNW17BXGE");
   </script>
+  <!--bootstrap cdn-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!--My style sheet-->
   <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta name="keywords"
@@ -26,30 +28,34 @@
 <body>
   <!--Contains the nav menu, switched from custom one to bootstrap for mobile friendlieness-->
   <header>
+    <!--New improved nav bar, uses bootstrap, navbar-expand-lg meaning the
+    expanded panel is going to be big-->
     <nav class="navbar navbar-expand-lg">
       <div class="container">
+        <!--Team logo-->
         <a class="navbar-brand" href="index.html">
           <img src="images/team-logo.avif" class="logo"
             alt="Circle with the South Carolina Gamecock logo surrounded by text that reads 'Gamecock Club Swimming'">
         </a>
+        <!--Button that collapses/opens the navbar-->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
           <span class="navbar-toggler-icon"></span>
+          <!--Had to add this line bc WAVE thought it was an empty button, just hidden-->
           <span class="visually-hidden">Toggle navigation visibility</span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
+            <!--nav-item is each link-->
             <li class="nav-item">
               <a class="nav-link" href="about26.html">About The Team</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="faqs.html">FAQs</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact Us</a>
-            </li>
             <!-- <li class="nav-item">
               <a class="nav-link" href="registration.html">Registration</a>
             </li> -->
+            <!--dropdown, but within the current nav bar -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                 data-bs-toggle="dropdown">
@@ -79,7 +85,9 @@
         </div>
       </div>
     </nav>
-    <h1 class="text-center my-3">Good Luck With Finals Aquacocks!</h1>
+    <!--Large banner across each page, not dynamic :(-->
+    <h1 class="text-center my-3">Welcome Back Aquacocks!</h1>
+    <!--container-fluid meaning it will adjust based on screensize, no padding-->
     <div class="container-fluid px-0">
       <img src="/images/team-photo.avif" class="img-fluid w-100"
         alt="Photo of many people grouped together wearing similar shirts">
@@ -89,9 +97,12 @@
   <!--Main Section of homepage-->
   <div class="container">
     <div class="row">
-      <!-- Instagram widget - takes full width on small screens, half width on medium+ screens -->
+      <!-- Instagram widget - 1/3 of the row is used
+       col 12 meaning 12 total columns, only 4 are being used -->
       <div class="col-12 col-md-4 mb-4">
+        <!--Put into a container so it can be changed-->
         <div id="instagram-container">
+          <!--taken from instagram account, can copy a profile/post embed if you are signed in (no dev acct reqd)-->
           <blockquote class="instagram-media"
             data-instgrm-permalink="https://www.instagram.com/gamecockclubswimming/?utm_source=ig_embed&amp;utm_campaign=loading"
             data-instgrm-version="14"
@@ -189,7 +200,8 @@
           <script async src="//www.instagram.com/embed.js"></script>
         </div>
       </div>
-      <!-- Google Calendar widget - takes full width on small screens, half width on medium+ screens -->
+      <!-- Google Calendar widget 2/3 row used
+       medium sized widget (8 columns) -->
       <div class="col-12 col-md-8 mb-4">
         <div id="calendar-container">
           <!-- Google Calendar embed will be inserted by JavaScript -->
@@ -205,9 +217,11 @@
         affiliated with the University of South Carolina.</p>
     </footer>
   </div>
+  <!--reqs bootstrap js cdn -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
+  <!--script required for gcal embed-->
   <script src="responsive-embeds.js"></script>
 </body>
 

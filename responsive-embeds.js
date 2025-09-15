@@ -1,4 +1,5 @@
-// Responsive Google Calendar script for Gamecock Club Swimming website
+// Responsive Google Calendar script for Gamecock Club Swimming website,
+//Built with ClaudeAI
 
 // Function to handle Google Calendar embed responsiveness
 function setCalendarIframeSource() {

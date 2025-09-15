@@ -35,11 +35,12 @@ body {
     margin: 0 auto;
     position: relative;
   }
+  /*Changes underline color and font weight*/
   nav a:hover{
     text-decoration: underline #73000a;
     font-weight: 400;
   }
-  
+  /*set size of logo*/
   .logo {
     width: 80px;
     height: 80px;
@@ -83,7 +84,7 @@ body {
     margin-bottom: 30px;
     font-weight: 300;
   }
-
+/*All bootstrap items need to be in a container, sets the defaults*/
 .container{
   padding-top: 10px;
 }
@@ -91,7 +92,7 @@ body {
 .container footer p{
     font-size: 14px;
 }
-/* Contact Form Styling */
+/* Style form */
 form {
     max-width: 600px;
     margin: 0 auto;
@@ -107,7 +108,7 @@ form {
     font-weight: 575;
 
   }
-  
+  /*required text*/
   .required {
     font-weight: normal;
     color:#5C5C5C;
@@ -125,6 +126,7 @@ form {
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
   }
+  /*changes color of currently selected field*/
   input:focus, textarea:focus, select:focus{
     border-color: #73000a;
     box-shadow: 0 0 5px rgba(115, 0, 10, 0.25); /*Gives the border a lil glow*/
@@ -154,7 +156,7 @@ form {
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
   }
-  
+  /*adds a little shadow when hovering over button*/
   .submit-button:hover {
     background-color: #570008; /* Dark Garnet for hover */
     box-shadow: 0 4px 8px rgba(115, 0, 10, 0.3);
